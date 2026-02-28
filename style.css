@@ -1,0 +1,131 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* HERO COLORIDO */
+.hero {
+    background: #ff0000;;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.btn {
+    background: #000;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+/* SOBRE */
+.sobre {
+    padding: 60px 20px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.imagem img {
+    width: 300px;
+    border-radius: 15px;
+}
+
+.texto {
+    flex: 1;
+}
+
+/* PORTFÓLIO */
+.portfolio {
+    background: #f4f4f4;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.galeria {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.item img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+    transition: transform 0.3s;
+}
+
+.item img:hover {
+    transform: scale(1.05);
+}
+
+/* ESPECIALIDADES */
+.especialidades {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #000;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* DIFERENCIAIS */
+.diferenciais {
+    background: #ffcc00;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+/* CONTATO */
+.contato {
+    background: #1b1b1b;
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: auto;
+    gap: 15px;
+}
+
+input, textarea, button {
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+}
+
+button {
+    background: #ff0000;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+}
